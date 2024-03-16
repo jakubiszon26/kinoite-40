@@ -18,7 +18,7 @@ modules:
           # in /usr/etc/ in the image. read more in files module reference.
 
   - type: rpm-ostree
-    repos:  - https://copr.fedorainfracloud.org/coprs/bieszczaders/kernel-cachyos/repo/fedora-40/bieszczaders-kernel-cachyos-fedora-40.repo
+    repos: - https://copr.fedorainfracloud.org/coprs/bieszczaders/kernel-cachyos/repo/fedora-40/bieszczaders-kernel-cachyos-fedora-40.repo
     install:
        - kernel-cachyos
     remove:
