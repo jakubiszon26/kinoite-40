@@ -1,5 +1,5 @@
 ublue_variants:
-  - label: blue-build/template
+  - label: jakubiszon26/kinoite-40
     ks: /kickstart/ublue-os.ks
     flavors:
-      - label: blue-build/template
+      - label: kinoite-40
