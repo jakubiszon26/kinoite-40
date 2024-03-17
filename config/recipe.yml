@@ -27,6 +27,7 @@ modules:
        - libcap-ng-devel
        - procps-ng-devel
        - uksmd
+       - gparted
     remove:
        - kernel
        - kernel-core 
