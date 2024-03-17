@@ -1,7 +1,6 @@
 # kinoite-40
 This is my personal fedora kinoite image based on blue-build template.
-Based on Fedora Kinoite 40 image (quay.io/repository/fedora-ostree-desktops/kinoite)
-changed default kernel to kernel-cachyos (https://copr.fedorainfracloud.org/coprs/bieszczaders/kernel-cachyos/)
+Based on Fedora Kinoite 40 image (quay.io/repository/fedora-ostree-desktops/kinoite) and I've switched from default kernel to kernel-cachyos (https://copr.fedorainfracloud.org/coprs/bieszczaders/kernel-cachyos/)
 
 
 See the [BlueBuild docs](https://blue-build.org/how-to/setup/) for quick setup instructions for setting up your own repository based on this template.
