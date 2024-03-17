@@ -20,19 +20,19 @@ modules:
   - type: rpm-ostree
     repos:
        - https://copr.fedorainfracloud.org/coprs/bieszczaders/kernel-cachyos/repo/fedora-40/bieszczaders-kernel-cachyos-fedora-40.repo
+       - https://copr.fedorainfracloud.org/coprs/bieszczaders/kernel-cachyos-addons/repo/fedora-40/bieszczaders-kernel-cachyos-addons-fedora-40.repo
 
     install:
        - kernel-cachyos
+       - libcap-ng-devel
+       - procps-ng-devel
+       - uksmd
     remove:
-      # example: removing firefox (in favor of the flatpak)
-      # "firefox" is the main package, "firefox-langpacks" is a dependency
        - kernel
        - kernel-core 
        - kernel-modules 
        - kernel-modules-core 
        - kernel-modules-extra
-      # - firefox-langpacks # also remove firefox dependency (not required for all packages, this is a special case)
-
   - type: default-flatpaks
     notify: true # Send notification after install/uninstall is finished (true/false)
     system:
@@ -50,5 +50,8 @@ modules:
       # Installing different branches of the same Flatpak is not supported.
       remove:
         # - org.gnome.eog
-
+  - type: systemd
+    system:
+      enabled:
+          - uksmd.service
   - type: signing # this sets up the proper policy & signing files for signed images to work fully
