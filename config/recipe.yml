@@ -34,6 +34,7 @@ modules:
        - kernel-modules 
        - kernel-modules-core 
        - kernel-modules-extra
+       - plasma-discover-rpm-ostree
   - type: default-flatpaks
     notify: true # Send notification after install/uninstall is finished (true/false)
     system:
