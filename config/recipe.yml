@@ -28,6 +28,7 @@ modules:
        - procps-ng-devel
        - uksmd
        - gparted
+       - distrobox
     remove:
        - kernel
        - kernel-core 
